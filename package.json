@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-new": "canvas-sketch -n -o",
+    "create-3js": "canvas-sketch -n --template=three -o",
+    "create-penplot": "canvas-sketch -n --template=penplot -o",
+    "run-sketch": "canvas-sketch -o"
   },
   "author": "",
   "license": "ISC",
@@ -14,8 +18,10 @@
     "canvas-sketch": "^0.7.3",
     "canvas-sketch-util": "^1.10.0",
     "convex-hull": "^1.0.3",
+    "delaunator": "^4.0.1",
     "density-clustering": "^1.3.0",
     "gl-matrix": "^3.3.0",
+    "load-asset": "^1.2.0",
     "p5": "^1.0.0",
     "perspective-camera": "^2.0.1",
     "simplex-noise": "^2.4.0",
