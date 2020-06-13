@@ -3,7 +3,8 @@ const p5 = require('p5')
 const Random = require('canvas-sketch-util/random')
 
 const settings = {
-  dimensions: [1024, 1024],
+  dimensions: 'A5',
+  pixelPerInch: 300,
   p5: { p5 }
 };
 

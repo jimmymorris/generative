@@ -42,7 +42,7 @@ const sketch = () => {
         context.stroke(region);
         context.clip(region)
 
-        const density = Math.abs(p5.tan(mod)) * 64;
+        const density = Math.abs(p5.sin(mod)) * 32;
 
         for (let i = 0; i < density; i += 1) {
           p5.stroke(255, 0, 0)

@@ -1,7 +1,10 @@
 const canvasSketch = require('canvas-sketch');
 
 const settings = {
-  dimensions: [ 1024, 1024 ]
+  dimensions: 'A5',
+  orientation: 'landscape',
+  pixelsPerInch: 300,
+  scaleToView: true
 };
 
 const randomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
@@ -13,7 +16,7 @@ const sketch = () => {
     const margin = 1 / 4;
 
     // starting settings
-    let size = width;
+    let size = width - margin;
     let finalSize = 3;
     let startSteps;
     let offset = 3;
